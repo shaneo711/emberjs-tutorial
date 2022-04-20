@@ -13,4 +13,14 @@
     <del class="small text-black-50">$199.95</del>
     <i class="text-danger font-weight-bold">$99.98</i>
   </section>
+
+  <div>
+    <h5>Colour</h5>
+    <div class="product-colours active-{{@colour}}">
+      <span class="product-colour colour-red"
+        {{on "click" (fn @onChangeColour "red")}}></span>
+      <span class="product-colour colour-black"
+        {{on "click" (fn @onChangeColour "black")}}></span>
+    </div>
+  </div>
 </div>
