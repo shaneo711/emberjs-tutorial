@@ -6,7 +6,7 @@ export default class ItemController extends Controller {
   @tracked colour = 'red';
 
   get productImage() {
-    return `/assets/images/beats-solo-${this.colour}.png`
+    return `/assets/images/beats-solo-${this.colour}.png`;
   }
 
   @action
